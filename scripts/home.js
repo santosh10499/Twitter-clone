@@ -106,6 +106,7 @@ window.onload = async () => {
 document.addEventListener('click', async (event) => {
     if(event.target.classList.contains('tweet-post-btn')) {
         const tweetText = document.querySelector('.tweet-post-text').value;
+        
 
         const data = {
             title: tweetText,
@@ -130,6 +131,7 @@ document.addEventListener('click', async (event) => {
 
         document.querySelector('.tweet-post-text').value = "";
         alert(tweet.message);
+        location.reload()
     }
     
 /*================= Function to Delete Tweet ==================================================================================*/
